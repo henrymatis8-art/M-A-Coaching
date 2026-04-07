@@ -83,7 +83,7 @@ export default function Programme() {
           </h2>
           <div className="w-16 h-0.5 bg-cyan-brand mx-auto mb-6" />
           <p className="font-body text-white/60 max-w-2xl mx-auto text-base leading-relaxed">
-            M&A Conditioning est né d'une expérience commune : deux frères, deux coachs, deux disciplines —
+            M&A Conditioning est né d&apos;une expérience commune : deux frères, deux coachs, deux disciplines —
             et une conviction partagée que les jeunes méritent un encadrement honnête, sécuritaire et efficace.
           </p>
         </div>

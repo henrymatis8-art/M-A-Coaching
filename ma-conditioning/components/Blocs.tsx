@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
 const blocs = [
@@ -92,10 +93,12 @@ export default function Blocs() {
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={b.image}
                   alt={b.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-navy/70" />
                 <div className="absolute top-4 left-4 font-display font-800 text-6xl text-white/10 leading-none select-none">
@@ -133,7 +136,7 @@ export default function Blocs() {
         <div className="mt-12 text-center">
           <div className="inline-block border border-cyan-brand/30 bg-cyan-brand/5 px-8 py-5 max-w-2xl">
             <p className="font-body text-white/70 text-sm leading-relaxed">
-              <span className="text-cyan-brand font-600">À chaque fin de semaine :</span> évaluation des capacités physiques remise par courriel aux parents et à l'athlète, pour suivre la progression en temps réel.
+              <span className="text-cyan-brand font-600">À chaque fin de semaine :</span> évaluation des capacités physiques remise par courriel aux parents et à l&apos;athlète, pour suivre la progression en temps réel.
             </p>
           </div>
         </div>

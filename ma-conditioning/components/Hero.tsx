@@ -75,7 +75,7 @@ export default function Hero() {
             }}
             className="font-display font-700 text-sm tracking-[0.2em] uppercase bg-cyan-brand text-navy px-10 py-4 hover:bg-white transition-colors duration-200 w-full sm:w-auto text-center"
           >
-            S'inscrire maintenant
+            S&apos;inscrire maintenant
           </a>
           <a
             href="#programme"

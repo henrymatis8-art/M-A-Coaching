@@ -115,7 +115,7 @@ export default function Contact() {
                 </div>
                 {status === 'error' && (
                   <p className="font-body text-red-400 text-sm border border-red-400/30 bg-red-400/10 px-4 py-3">
-                    Erreur lors de l'envoi. Veuillez nous contacter directement.
+                    Erreur lors de l&apos;envoi. Veuillez nous contacter directement.
                   </p>
                 )}
                 <button

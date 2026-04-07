@@ -128,16 +128,16 @@ export default function Inscription() {
             <div className="mb-8">
               <h3 className="font-display font-700 text-lg uppercase tracking-wide text-cyan-brand mb-5 flex items-center gap-3">
                 <span className="w-6 h-px bg-cyan-brand/40" />
-                Informations de l'athlète
+                  Informations de l&apos;athlète
               </h3>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Prénom *</label>
-                  <input required className="form-input" placeholder="Prénom de l'athlète" value={form.prenomAthlete} onChange={(e) => set('prenomAthlete', e.target.value)} />
+                  <input required className="form-input" placeholder="Prénom de l&apos;athlète" value={form.prenomAthlete} onChange={(e) => set('prenomAthlete', e.target.value)} />
                 </div>
                 <div>
                   <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Nom *</label>
-                  <input required className="form-input" placeholder="Nom de l'athlète" value={form.nomAthlete} onChange={(e) => set('nomAthlete', e.target.value)} />
+                  <input required className="form-input" placeholder="Nom de l&apos;athlète" value={form.nomAthlete} onChange={(e) => set('nomAthlete', e.target.value)} />
                 </div>
                 <div>
                   <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Âge *</label>
@@ -185,7 +185,7 @@ export default function Inscription() {
                 <div className="mt-4 border border-cyan-brand/30 bg-cyan-brand/5 px-6 py-4 flex items-center justify-between">
                   <div>
                     <span className="font-body text-white/60 text-sm">Total estimé</span>
-                    <div className="font-body text-white/50 text-xs mt-0.5">Facture envoyée par courriel après l'inscription</div>
+                    <div className="font-body text-white/50 text-xs mt-0.5">Facture envoyée par courriel après l&apos;inscription</div>
                   </div>
                   <span className="font-display font-800 text-3xl text-cyan-brand">{prix[form.semaines]}$</span>
                 </div>
@@ -215,11 +215,11 @@ export default function Inscription() {
               disabled={status === 'loading'}
               className="w-full bg-cyan-brand text-navy font-display font-800 text-sm tracking-[0.2em] uppercase py-5 hover:bg-white transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {status === 'loading' ? 'Envoi en cours...' : 'Confirmer l\'inscription →'}
+              {status === 'loading' ? 'Envoi en cours...' : "Confirmer l'inscription →"}
             </button>
 
             <p className="font-body text-white/30 text-xs text-center mt-4">
-              Aucun paiement requis maintenant · Facture envoyée par courriel dans les 7 jours suivant l'inscription
+              Aucun paiement requis maintenant · Facture envoyée par courriel dans les 7 jours suivant l&apos;inscription
             </p>
           </form>
         )}

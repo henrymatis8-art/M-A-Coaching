@@ -91,7 +91,7 @@ export default function Tarifs() {
 
               <div className="mb-4">
                 <span className="font-display font-800 text-4xl text-white">{t.price}$</span>
-                <div className="font-body text-xs text-cyan-brand mt-1">{t.perHour}$/heure · frais d'admin inclus</div>
+                <div className="font-body text-xs text-cyan-brand mt-1">{t.perHour}$/heure · frais d&apos;admin inclus</div>
               </div>
 
               <p className="font-body text-white/50 text-xs leading-relaxed mb-5">{t.description}</p>
@@ -117,7 +117,7 @@ export default function Tarifs() {
                     : 'border border-white/20 text-white hover:border-cyan-brand hover:text-cyan-brand'
                 }`}
               >
-                S'inscrire →
+                S&apos;inscrire →
               </a>
             </div>
           ))}
@@ -131,7 +131,7 @@ export default function Tarifs() {
             </svg>
             <p className="font-body text-white/60 text-sm">
               <span className="text-white font-600">Facturation :</span>{' '}
-              Une facture vous sera envoyée par courriel dans la semaine suivant votre inscription. Aucun paiement à l'avance requis lors de l'inscription.
+              Une facture vous sera envoyée par courriel dans la semaine suivant votre inscription. Aucun paiement à l&apos;avance requis lors de l&apos;inscription.
             </p>
           </div>
         </div>
