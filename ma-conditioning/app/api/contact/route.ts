@@ -1,12 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'coachalexandre2005@gmail.com'
+
+function getResendClient() {
+  const key = process.env.RESEND_API_KEY
+  if (!key) {
+    throw new Error('Missing RESEND_API_KEY')
+  }
+  return new Resend(key)
+}
 
 export async function POST(req: NextRequest) {
   try {
     const { prenom, nom, courriel, telephone, message } = await req.json()
+    const resend = getResendClient()
 
     await resend.emails.send({
       from: 'M&A Conditioning <onboarding@resend.dev>',

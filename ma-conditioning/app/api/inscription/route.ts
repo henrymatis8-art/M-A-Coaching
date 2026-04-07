@@ -1,13 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'coachalexandre2005@gmail.com'
+
+function getResendClient() {
+  const key = process.env.RESEND_API_KEY
+  if (!key) {
+    throw new Error('Missing RESEND_API_KEY')
+  }
+  return new Resend(key)
+}
 
 const prix: Record<string, number> = { '1': 500, '2': 750, '3': 900, '4': 1000 }
 
 export async function POST(req: NextRequest) {
   try {
+    const resend = getResendClient()
     const data = await req.json()
     const {
       prenomParent, nomParent, courriel, telephone,
