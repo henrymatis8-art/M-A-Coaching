@@ -45,7 +45,7 @@ export default function Navbar() {
             <span className="sr-only">M&A Conditioning</span>
             <div className="relative w-56 h-16">
               <Image
-                src="/M%26A%20CONDITIONING.png"
+                src="/logo complet bleu.png"
                 alt="M&A Conditioning"
                 fill
                 className="object-contain"

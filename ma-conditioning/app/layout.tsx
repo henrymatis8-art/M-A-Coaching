@@ -53,9 +53,9 @@ export const metadata: Metadata = {
     images: ['/logo%20png.png'],
   },
   icons: {
-    icon: '/logo%20png.png',
-    shortcut: '/logo%20png.png',
-    apple: '/logo%20png.png',
+    icon: '/logo noir.png',
+    shortcut: '/logo noir.png',
+    apple: '/logo noir.png',
   },
   robots: {
     index: true,
