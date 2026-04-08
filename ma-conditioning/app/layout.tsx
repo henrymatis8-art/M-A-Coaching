@@ -15,10 +15,59 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'M&A Conditioning — Développement Physique Jeunesse | Montréal',
+  title: 'M&A Conditioning — Conditionnement physique jeunesse à Montréal',
   description:
-    'Programme de conditionnement physique pour jeunes de 8 à 20 ans. Athlétisme, sprint, basketball et développement physique. Montréal — Été 2025.',
-  keywords: ['conditionnement physique', 'jeunes', 'Montréal', 'athlétisme', 'sprint', 'basketball', 'programme sportif'],
+    'M&A Conditioning propose un programme de conditionnement physique pour jeunes de 8 à 20 ans à Montréal. Athlétisme, sprint, basketball, préparation sportive et développement physique.',
+  keywords: [
+    'conditionnement physique',
+    'entraînement sportif',
+    'athlétisme Montréal',
+    'sprint Montréal',
+    'basketball Montréal',
+    'programme jeunesse',
+    'préparation physique',
+    'coaching sportif',
+    'jeunes athlètes',
+    'performance sportive',
+  ],
+  authors: [{ name: 'M&A Conditioning' }],
+  metadataBase: new URL('https://m-a-conditioning'),
+  openGraph: {
+    title: 'M&A Conditioning — Conditionnement physique jeunesse à Montréal',
+    description:
+      'M&A Conditioning propose un programme de conditionnement physique pour jeunes de 8 à 20 ans à Montréal. Athlétisme, sprint, basketball, préparation sportive et développement physique.',
+    type: 'website',
+    siteName: 'M&A Conditioning',
+    images: [
+      {
+        url: '/logo%20png.png',
+        alt: 'M&A Conditioning logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'M&A Conditioning — Conditionnement physique jeunesse à Montréal',
+    description:
+      'M&A Conditioning propose un programme de conditionnement physique pour jeunes de 8 à 20 ans à Montréal. Athlétisme, sprint, basketball, préparation sportive et développement physique.',
+    images: ['/logo%20png.png'],
+  },
+  icons: {
+    icon: '/logo%20png.png',
+    shortcut: '/logo%20png.png',
+    apple: '/logo%20png.png',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({

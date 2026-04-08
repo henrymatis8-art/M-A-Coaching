@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 
 export default function Footer() {
   const links = [
@@ -21,9 +22,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="font-display font-800 text-3xl tracking-widest text-white mb-2 uppercase">
-              M<span className="text-cyan-brand">&</span>A
-              <span className="font-display font-400 text-lg ml-2 tracking-[0.3em]">Conditioning</span>
+            <div className="relative w-40 h-12 mb-4">
+              <Image
+                src="/N%C3%A9gatif%201.png"
+                alt="M&A Conditioning"
+                fill
+                className="object-contain"
+              />
             </div>
             <p className="font-display text-sm tracking-[0.2em] text-cyan-brand uppercase mb-4">
               Force · Fondation · Avenir

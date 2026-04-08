@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const links = [
@@ -36,17 +37,20 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-5 flex items-center justify-between">
-          {/* Logo text */}
+          {/* Logo */}
           <button
             onClick={() => handleNav('#hero')}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-3 group"
           >
-            <span className="font-display font-800 text-2xl tracking-widest text-white uppercase">
-              M<span className="text-cyan-brand">&</span>A
-            </span>
-            <span className="hidden sm:block font-display text-xs tracking-[0.3em] text-white/50 uppercase mt-0.5">
-              Conditioning
-            </span>
+            <span className="sr-only">M&A Conditioning</span>
+            <div className="relative w-56 h-16">
+              <Image
+                src="/M%26A%20CONDITIONING.png"
+                alt="M&A Conditioning"
+                fill
+                className="object-contain"
+              />
+            </div>
           </button>
 
           {/* Desktop links */}
