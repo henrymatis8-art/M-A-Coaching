@@ -88,7 +88,7 @@ export default function ProgrammeBasketball() {
             <div className="flex-1">
               <p className="text-white/60 text-sm leading-relaxed mb-5">
                 Coach de basketball et spécialiste du développement physique, Alexandre a lui-même vécu les
-                conséquences d'une mauvaise formation étant jeune. Sa mission : que les jeunes athlètes sous
+                conséquences d&apos;une mauvaise formation étant jeune. Sa mission : que les jeunes athlètes sous
                 sa supervision bâtissent une fondation solide, apprennent les bons gestes dès le début et
                 évoluent en confiance — sur le terrain et dans la vie.
               </p>
@@ -172,7 +172,7 @@ export default function ProgrammeBasketball() {
               </svg>
               <p className="text-white/60 text-sm">
                 <span className="font-semibold" style={{ color: '#457B9D' }}>Lieu :</span>{' '}
-                À déterminer — Montréal, QC · Confirmation envoyée lors de l'inscription
+                À déterminer — Montréal, QC · Confirmation envoyée lors de l&apos;inscription
               </p>
             </div>
           </div>

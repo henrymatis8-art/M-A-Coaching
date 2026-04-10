@@ -94,7 +94,7 @@ export default function TarifsBasketball() {
 
               <div className="mb-4">
                 <span className="text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-barlow)' }}>{t.price}$</span>
-                <div className="text-xs mt-1" style={{ color: '#E63946' }}>{t.perHour}$/heure · frais d'admin inclus</div>
+                <div className="text-xs mt-1" style={{ color: '#E63946' }}>{t.perHour}$/heure · frais d&apos;admin inclus</div>
               </div>
 
               <p className="text-white/50 text-xs leading-relaxed mb-5">{t.description}</p>
@@ -129,7 +129,7 @@ export default function TarifsBasketball() {
                   else { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; e.currentTarget.style.color = 'white' }
                 }}
               >
-                S'inscrire →
+                S&apos;inscrire →
               </a>
             </div>
           ))}
@@ -146,7 +146,7 @@ export default function TarifsBasketball() {
             </svg>
             <p className="text-white/60 text-sm">
               <span className="text-white font-semibold">Facturation :</span>{' '}
-              Une facture vous sera envoyée par courriel dans la semaine suivant votre inscription. Aucun paiement à l'avance requis.
+              Une facture vous sera envoyée par courriel dans la semaine suivant votre inscription. Aucun paiement à l&apos;avance requis.
             </p>
           </div>
         </div>

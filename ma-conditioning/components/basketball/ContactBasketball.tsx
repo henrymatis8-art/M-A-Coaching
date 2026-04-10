@@ -102,7 +102,7 @@ export default function ContactBasketball() {
                 </div>
                 {status === 'error' && (
                   <p style={{ color: '#f87171', fontSize: '13px', border: '1px solid rgba(239,68,68,0.3)', background: 'rgba(239,68,68,0.1)', padding: '12px 16px' }}>
-                    Erreur lors de l'envoi. Veuillez nous contacter directement.
+                    Erreur lors de l&apos;envoi. Veuillez nous contacter directement.
                   </p>
                 )}
                 <button

@@ -157,12 +157,12 @@ export default function InscriptionBasketball() {
             <div style={{ marginBottom: '32px' }}>
               <div style={sectionTitleStyle}>
                 <span style={{ width: '24px', height: '1px', background: 'rgba(230,57,70,0.4)', display: 'inline-block' }} />
-                Informations de l'athlète
+                Informations de l&apos;athlète
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label style={labelStyle}>Prénom *</label>
-                  <input required style={inputStyle} placeholder="Prénom de l'athlète" value={form.prenomAthlete} onChange={(e) => set('prenomAthlete', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')} />
+                  <input required style={inputStyle} placeholder="Prénom de l&apos;athlète" value={form.prenomAthlete} onChange={(e) => set('prenomAthlete', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')} />
                 </div>
                 <div>
                   <label style={labelStyle}>Nom *</label>
@@ -176,7 +176,7 @@ export default function InscriptionBasketball() {
                   <label style={labelStyle}>Niveau de basketball *</label>
                   <select required style={{ ...inputStyle, cursor: 'pointer' }} value={form.niveauBasket} onChange={(e) => set('niveauBasket', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}>
                     <option value="">Sélectionner...</option>
-                    <option value="Débutant">Débutant — peu ou pas d'expérience</option>
+                    <option value="Débutant">Débutant — peu ou pas d&apos;expérience</option>
                     <option value="Intermédiaire">Intermédiaire — joue depuis 1-2 ans</option>
                     <option value="Avancé">Avancé — joue en ligue organisée</option>
                   </select>
@@ -215,7 +215,7 @@ export default function InscriptionBasketball() {
                 <div style={{ marginTop: '16px', border: '1px solid rgba(230,57,70,0.3)', background: 'rgba(230,57,70,0.05)', padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <div>
                     <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px' }}>Total estimé</span>
-                    <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '11px', marginTop: '2px' }}>Facture envoyée par courriel après l'inscription</div>
+                    <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '11px', marginTop: '2px' }}>Facture envoyée par courriel après l&apos;inscription</div>
                   </div>
                   <span style={{ color: '#E63946', fontSize: '28px', fontWeight: 800, fontFamily: 'var(--font-barlow)' }}>{prix[form.semaines]}$</span>
                 </div>

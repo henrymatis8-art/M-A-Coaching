@@ -100,7 +100,7 @@ export default function HeroBasketball() {
             onMouseEnter={e => (e.currentTarget.style.background = '#fff', e.currentTarget.style.color = '#E63946')}
             onMouseLeave={e => (e.currentTarget.style.background = '#E63946', e.currentTarget.style.color = '#fff')}
           >
-            S'inscrire maintenant
+            S&apos;inscrire maintenant
           </a>
           <a
             href="#programme"
