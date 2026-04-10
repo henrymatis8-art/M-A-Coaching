@@ -43,7 +43,7 @@ export default function Navbar() {
             className="flex items-center gap-3 group"
           >
             <span className="sr-only">M&A Conditioning</span>
-            <div className="relative w-56 h-16">
+            <div className="relative w-28 h-8 md:w-56 md:h-16">
               <Image
                 src="/logo complet bleu.png"
                 alt="M&A Conditioning"

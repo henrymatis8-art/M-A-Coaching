@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 export default function Hero() {
@@ -77,16 +78,12 @@ export default function Hero() {
           >
             S&apos;inscrire maintenant
           </a>
-          <a
-            href="#programme"
-            onClick={(e) => {
-              e.preventDefault()
-              document.querySelector('#programme')?.scrollIntoView({ behavior: 'smooth' })
-            }}
-            className="font-display font-700 text-sm tracking-[0.2em] uppercase border border-white/40 text-white px-10 py-4 hover:border-cyan-brand hover:text-cyan-brand transition-colors duration-200 w-full sm:w-auto text-center"
+          <Link
+            href="/basketball"
+            className="font-display font-700 text-sm tracking-[0.2em] uppercase border border-white/40 text-red-500 px-10 py-4 hover:border-cyan-brand hover:text-white hover:bg-red-500 transition-colors duration-200 w-full sm:w-auto text-center"
           >
-            Notre programme
-          </a>
+            Programme de Basketball
+          </Link>
         </div>
 
         {/* Stats strip */}
