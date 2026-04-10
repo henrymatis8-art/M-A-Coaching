@@ -62,13 +62,13 @@ export default function NavbarBasketball() {
           </div>
 
           <a
-            href="tel:5147098609"
+            href="mailto:coachalexandre2005@gmail.com"
             className="hidden lg:flex items-center gap-2 text-sm tracking-wider px-5 py-2.5 font-bold uppercase transition-colors duration-200"
             style={{ background: '#E63946', color: 'white', fontFamily: 'var(--font-barlow)' }}
             onMouseEnter={e => { e.currentTarget.style.background = 'white'; e.currentTarget.style.color = '#E63946' }}
             onMouseLeave={e => { e.currentTarget.style.background = '#E63946'; e.currentTarget.style.color = 'white' }}
           >
-            514-709-8609
+            coachalexandre2005@gmail.com
           </a>
 
           <button className="lg:hidden flex flex-col gap-1.5 p-2" onClick={() => setMenuOpen(!menuOpen)}>
@@ -101,11 +101,11 @@ export default function NavbarBasketball() {
           </button>
         ))}
         <a
-          href="tel:5147098609"
+          href="mailto:coachalexandre2005@gmail.com"
           className="mt-4 text-lg tracking-wider border px-8 py-3 font-bold uppercase transition-colors duration-200"
           style={{ borderColor: '#E63946', color: '#E63946', fontFamily: 'var(--font-barlow)' }}
         >
-          514-709-8609
+          coachalexandre2005@gmail.com
         </a>
       </div>
     </>

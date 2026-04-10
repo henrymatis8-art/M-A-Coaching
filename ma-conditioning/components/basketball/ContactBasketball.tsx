@@ -128,7 +128,7 @@ export default function ContactBasketball() {
               <h3 className="text-xl uppercase tracking-wide text-white font-bold mb-6" style={{ fontFamily: 'var(--font-barlow)' }}>Informations</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 {[
-                  { icon: '📞', label: 'Téléphone', value: '514-709-8609', href: 'tel:5147098609' },
+                  
                   { icon: '✉', label: 'Courriel', value: 'coachalexandre2005@gmail.com', href: 'mailto:coachalexandre2005@gmail.com' },
                   { icon: '📍', label: 'Localisation', value: 'Montréal, QC — Lieu à confirmer', href: null },
                 ].map((info) => (

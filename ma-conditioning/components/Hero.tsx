@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 mb-6">
           <span className="w-8 h-px bg-cyan-brand" />
           <span className="font-display text-xs tracking-[0.35em] text-cyan-brand uppercase">
-            Montréal — 514-709-8609
+            Montréal — coachalexandre2005@gmail.com
           </span>
           <span className="w-8 h-px bg-cyan-brand" />
         </div>
@@ -58,12 +58,12 @@ export default function Hero() {
         {/* Subline */}
         <p className="font-body text-white/70 text-base sm:text-lg max-w-xl mx-auto mb-3 leading-relaxed">
           Programme de développement physique pour jeunes de{' '}
-          <span className="text-white font-600">8 à 20 ans</span>
+          <span className="text-white font-600">13 à 19 ans</span>
         </p>
         <p className="font-body text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
           Athlétisme · Sprint · Basketball · Conditionnement physique
           <br />
-          <span className="text-cyan-brand/80">Montréal — Été 2025 · Juin / Juillet / Août</span>
+          <span className="text-cyan-brand/80">Montréal — Été 2026 · Juin / Juillet / Août</span>
         </p>
 
         {/* CTAs */}

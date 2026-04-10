@@ -51,7 +51,7 @@ export default function HeroBasketball() {
         <div className="inline-flex items-center gap-2 mb-6">
           <span className="w-8 h-px bg-[#E63946]" />
           <span className="text-[#E63946] uppercase tracking-[0.35em] text-xs font-bold">
-            Montréal — 514-709-8609
+            Montréal — coachalexandre2005@gmail.com
           </span>
           <span className="w-8 h-px bg-[#E63946]" />
         </div>
@@ -84,7 +84,7 @@ export default function HeroBasketball() {
         <p className="text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
           Fondamentaux · Développement physique · Mentalité compétitive
           <br />
-          <span style={{ color: '#457B9D' }}>Montréal — Été 2025 · Juin / Juillet / Août</span>
+          <span style={{ color: '#457B9D' }}>Montréal — Été 2026 · Juin / Juillet / Août</span>
         </p>
 
         {/* CTAs */}

@@ -68,13 +68,13 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="tel:5147098609"
+            href="mailto:coachalexandre2005@gmail.com"
             className="hidden lg:flex items-center gap-2 bg-cyan-brand text-navy font-display font-700 text-sm tracking-wider px-5 py-2.5 hover:bg-white transition-colors duration-200 uppercase"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z" />
             </svg>
-            514-709-8609
+            coachalexandre2005@gmail.com
           </a>
 
           {/* Hamburger */}
@@ -106,10 +106,10 @@ export default function Navbar() {
           </button>
         ))}
         <a
-          href="tel:5147098609"
+          href="mailto:coachalexandre2005@gmail.com"
           className="mt-4 font-display font-700 text-lg tracking-wider text-cyan-brand border border-cyan-brand px-8 py-3 hover:bg-cyan-brand hover:text-navy transition-colors duration-200 uppercase"
         >
-          514-709-8609
+          Coachalexandre2005@gmail.com
         </a>
       </div>
     </>

@@ -58,10 +58,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-700 text-xs tracking-[0.3em] uppercase text-white/50 mb-5">Contact direct</h4>
             <div className="space-y-3">
-              <a href="tel:5147098609" className="flex items-center gap-3 group">
-                <span className="text-cyan-brand text-sm">📞</span>
-                <span className="font-body text-white/60 text-sm group-hover:text-cyan-brand transition-colors duration-200">514-709-8609</span>
-              </a>
+             
               <a href="mailto:coachalexandre2005@gmail.com" className="flex items-center gap-3 group">
                 <span className="text-cyan-brand text-sm">✉</span>
                 <span className="font-body text-white/60 text-sm group-hover:text-cyan-brand transition-colors duration-200 break-all">coachalexandre2005@gmail.com</span>
