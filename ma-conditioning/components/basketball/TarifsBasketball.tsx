@@ -4,17 +4,17 @@ import { useInView } from 'react-intersection-observer'
 const tarifs = [
   {
     weeks: 1,
-    price: 225,
+    price: '150 + frais d\'admin',
     perHour: 225 / 12, // 12 sessions de 2h
     label: 'Essai',
     description: 'Parfait pour découvrir le programme et évaluer l\'apport pour ton jeune athlète.',
-    features: ['6 sessions de 2h', 'Évaluation initiale', 'Rapport hebdomadaire'],
+    features: ['6 sessions  de 2h', 'Évaluation initiale', 'Rapport hebdomadaire'],
     popular: false,
   },
   {
     weeks: 2,
     price: 350,
-    perHour: 350 / 12, // 12 sessions de 2h
+    perHour: 30, // 12 sessions de 2h
     label: 'Développement',
     description: 'Deux semaines pour vraiment ressentir la progression et ancrer les bons gestes.',
     features: ['12 sessions de 2h', 'Évaluation initiale', '2 rapports hebdomadaires', 'Économie de 250$'],

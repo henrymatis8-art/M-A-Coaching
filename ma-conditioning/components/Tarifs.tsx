@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 const tarifs = [
   {
     weeks: 1,
-    price: 225, // 75$ de frais d'admin pour les sessions uniques            
+    price: '150 + frais d\'admin', // 75$ de frais d'admin pour les sessions uniques            
     perHour: 225 / 10, // 10 sessions de 2h
     label: 'Essai',
     description: 'Parfait pour découvrir le programme et évaluer l\'apport pour ton athlète.',

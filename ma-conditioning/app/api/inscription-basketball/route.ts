@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
 
     // Confirmation to parent
     await resend.emails.send({
-      from: 'M&A Conditioning <onboarding@resend.dev>',
+      from: 'M&A Conditioning <noreply@contact.m-a-conditioning.com>',
       to: courriel,
       subject: `🏀 Confirmation d'inscription Basketball — ${prenomAthlete} — M&A Conditioning`,
       html: `
