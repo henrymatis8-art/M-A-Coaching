@@ -34,7 +34,7 @@ export default function Footer() {
               Force · Fondation · Avenir
             </p>
             <p className="font-body text-white/40 text-xs leading-relaxed max-w-xs">
-              Programme de conditionnement physique pour jeunes de 8 à 20 ans. Montréal, été 2025.
+              Programme de conditionnement physique pour jeunes de 13 à 19 ans. Montréal, été 2025.
             </p>
           </div>
 
