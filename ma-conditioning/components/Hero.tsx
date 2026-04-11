@@ -19,7 +19,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1565992441121-4367c2967103?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          backgroundImage: `url('/banner.png')`,
           transform: 'scale(1.1)',
         }}
       />
@@ -63,7 +63,7 @@ export default function Hero() {
         <p className="font-body text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
           Athlétisme · Sprint · Basketball · Conditionnement physique
           <br />
-          <span className="text-cyan-brand/80">Montréal — Été 2026 · Juin / Juillet / Août</span>
+          <span className="text-cyan-brand/80">Complexe sportif Claude-Robillard -Montréal — Été 2026 · Juin / Juillet / Août</span>
         </p>
 
         {/* CTAs */}

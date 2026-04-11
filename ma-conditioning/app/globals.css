@@ -98,6 +98,17 @@ body {
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+  20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+.shake {
+  animation: shake 1s ease-in-out infinite;
+}
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.25), 0 20px 60px rgba(0,0,0,0.4);
