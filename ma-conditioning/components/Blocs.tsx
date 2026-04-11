@@ -31,7 +31,7 @@ const blocs = [
     description:
       'Sur les bases construites en juin, juillet intensifie : force relative au poids du corps, endurance spécifique, vitesse et coordination. Le jeune commence à ressentir sa progression.',
     focuses: [
-      'Force au poids du corps progressif',
+      'musculation fonctionnelle adaptée à l\'âge',
       'Endurance cardiovasculaire',
       'Vitesse & explosivité',
       'Coordination & agilité avancée',
