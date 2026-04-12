@@ -99,7 +99,7 @@ export default function Hero() {
         {/* Stats strip */}
         <div className="mt-16 flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 border-t border-white/10 pt-8">
           {[
-            { num: '8–20', label: 'Ans' },
+            { num: '13–19', label: 'Ans' },
             { num: '2h', label: 'Par session' },
             { num: '5x', label: 'Par semaine' },
             { num: '3', label: 'Blocs disponibles' },
