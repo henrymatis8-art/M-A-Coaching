@@ -15,14 +15,24 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image */}
+      {/* Mobile GIF background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
-          backgroundImage: `url('/banner.png')`,
+          backgroundImage: `url('/ezgif.com-video-to-gif-converter.gif')`,
           transform: 'scale(1.1)',
         }}
       />
+      {/* Desktop video background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover hidden md:block"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/mixkit-silhouette-of-woman-stretching-her-arms-780-hd-ready.mp4" type="video/mp4" />
+      </video>
       {/* Dark navy overlay */}
       <div className="absolute inset-0 bg-navy/75" />
       {/* Track lines motif */}

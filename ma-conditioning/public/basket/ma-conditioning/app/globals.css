@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0a0e1a;
+  --navy-light: #111827;
+  --navy-mid: #0d1324;
+  --cyan: #00d4ff;
+  --cream: #f5f0e8;
+  --steel: #457B9D;
+  --red-accent: #E63946;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--navy);
+  color: white;
+  font-family: var(--font-dm-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 3px; }
+
+/* Diagonal cuts */
+.clip-diagonal-top {
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 100%);
+}
+.clip-diagonal-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);
+}
+.clip-diagonal-both {
+  clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%);
+}
+
+/* Animated lines (track motif) */
+.track-lines {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    rgba(0, 212, 255, 0.06) 8px,
+    rgba(0, 212, 255, 0.06) 10px
+  );
+}
+
+/* Noise texture overlay */
+.noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Cyan glow */
+.cyan-glow {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 60px rgba(0, 212, 255, 0.1);
+}
+
+/* Input styles */
+.form-input {
+  @apply w-full bg-navy border border-white/20 text-white placeholder-white/40 px-4 py-3 rounded-sm font-body text-sm focus:outline-none focus:border-cyan-brand transition-colors duration-200;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 1px var(--cyan);
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stars */
+.star-filled { color: var(--cyan); }
+
+/* Card hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.25), 0 20px 60px rgba(0,0,0,0.4);
+  border-color: rgba(0, 212, 255, 0.6) !important;
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-barlow), sans-serif; }
+  .font-body { font-family: var(--font-dm-sans), sans-serif; }
+}

@@ -14,14 +14,24 @@ export default function HeroBasketball() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image — basketball court */}
+      {/* Mobile GIF background */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1920&q=80')`,
+          backgroundImage: `url('/basket.gif')`,
           transform: 'scale(1.1)',
         }}
       />
+      {/* Desktop video background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover hidden md:block"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="/basket.mp4" type="video/mp4" />
+      </video>
       {/* Dark navy overlay */}
       <div className="absolute inset-0 bg-[#0a0e1a]/80" />
       {/* Red gradient accent */}
