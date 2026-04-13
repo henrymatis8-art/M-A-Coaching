@@ -75,8 +75,8 @@ export default function HeroBasketball() {
 
         {/* Main headline */}
         <h1
-          className="leading-none uppercase mb-6"
-          style={{ fontFamily: 'var(--font-barlow), sans-serif', fontWeight: 800 }}
+          className="font-display font-800 leading-none uppercase mb-6"
+          style={{ fontFamily: 'var(--font-barlow), sans-serif' }}
         >
           <span className="block text-5xl sm:text-7xl lg:text-9xl text-[#E63946] tracking-tight">
             M&A
@@ -87,11 +87,11 @@ export default function HeroBasketball() {
         </h1>
 
         {/* Subline */}
-        <p className="text-white/70 text-base sm:text-lg max-w-xl mx-auto mb-3 leading-relaxed">
+        <p className="font-body text-white/70 text-base sm:text-lg max-w-xl mx-auto mb-3 leading-relaxed">
           Programme de développement basketball pour jeunes de{' '}
           <span className="text-white font-semibold">9 à 12 ans</span>
         </p>
-        <p className="text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
+        <p className="font-body text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
           Fondamentaux · Développement physique · Mentalité compétitive
           <br />
           <span style={{ color: '#457B9D' }}>Montréal — Été 2026 · Juin / Juillet / Août</span>
