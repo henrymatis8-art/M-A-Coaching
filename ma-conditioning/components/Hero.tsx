@@ -42,7 +42,7 @@ export default function Hero() {
 
       {/* Content */}
       <div
-        className={`relative z-10 text-center px-5 max-w-5xl mx-auto transition-all duration-1000 ${
+        className={`relative z-10 text-center px-5 max-w-4xl md:max-w-5xl mx-auto transition-all duration-1000 ${
           loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
@@ -90,7 +90,7 @@ export default function Hero() {
           </a>
           <Link
             href="/basketball"
-            className="font-display font-700 text-sm tracking-[0.2em] uppercase border border-white/40 text-red-500 px-10 py-4 hover:border-cyan-brand hover:text-white hover:bg-red-500 transition-colors duration-200 w-full sm:w-auto text-center"
+            className="font-display font-700 text-sm tracking-[0.2em] uppercase border border-white/40 text-red-500 px-10 py-4 hover:border-red-300 hover:text-white hover:bg-red-500 transition-colors duration-200 w-full sm:w-auto text-center"
           >
             Programme de Basketball
           </Link>
@@ -113,12 +113,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="font-body text-xs text-white/30 uppercase tracking-widest">Défiler</span>
-        <svg className="w-4 h-4 text-cyan-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
+     
     </section>
   )
 }

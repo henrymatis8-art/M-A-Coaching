@@ -91,7 +91,11 @@ export default function Tarifs() {
 
               <div className="mb-4">
                 <span className="font-display font-800 text-4xl text-white">{t.price}$</span>
-                <div className="font-body text-xs text-cyan-brand mt-1">{t.perHour}$/heure · frais d&apos;admin inclus</div>
+                <div className="font-body text-xs text-cyan-brand mt-1">
+                  {t.weeks === 1
+                    ? 'Tarif hors frais d\'admin — 75$ de frais d\'administration en sus'
+                    : `${t.perHour}$/heure · frais d'administration inclus`}
+                </div>
               </div>
 
               <p className="font-body text-white/50 text-xs leading-relaxed mb-5">{t.description}</p>

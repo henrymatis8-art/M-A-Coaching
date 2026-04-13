@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Programme from '@/components/Programme'
+import Horaires from '@/components/Horaires'
 import Blocs from '@/components/Blocs'
 import Tarifs from '@/components/Tarifs'
 import Inscription from '@/components/Inscription'
@@ -51,6 +52,7 @@ export default function Home() {
       <main>
         <Hero />
         <Programme />
+        <Horaires />
         <Blocs />
         <Tarifs />
         <Inscription />

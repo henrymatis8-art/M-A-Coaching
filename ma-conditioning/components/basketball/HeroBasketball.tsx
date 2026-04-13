@@ -53,7 +53,7 @@ export default function HeroBasketball() {
 
       {/* Content */}
       <div
-        className={`relative z-10 text-center px-5 max-w-5xl mx-auto transition-all duration-1000 ${
+        className={`relative z-10 text-center px-5 max-w-4xl md:max-w-5xl mx-auto transition-all duration-1000 ${
           loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
@@ -144,12 +144,7 @@ export default function HeroBasketball() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-        <span className="text-xs text-white/30 uppercase tracking-widest">Défiler</span>
-        <svg className="w-4 h-4" style={{ color: '#E63946' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
+   
     </section>
   )
 }
