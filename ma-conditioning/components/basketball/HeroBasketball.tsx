@@ -89,7 +89,7 @@ export default function HeroBasketball() {
         {/* Subline */}
         <p className="font-body text-white/70 text-base sm:text-lg max-w-xl mx-auto mb-3 leading-relaxed">
           Programme de développement basketball pour jeunes de{' '}
-          <span className="text-white font-semibold">9 à 12 ans</span>
+          <span className="text-white font-semibold">12 à 15 ans</span>
         </p>
         <p className="font-body text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
           Fondamentaux · Développement physique · Mentalité compétitive

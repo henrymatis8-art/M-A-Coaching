@@ -169,8 +169,8 @@ export default function InscriptionBasketball() {
                   <input required style={inputStyle} placeholder="Nom de l'athlète" value={form.nomAthlete} onChange={(e) => set('nomAthlete', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')} />
                 </div>
                 <div>
-                  <label style={labelStyle}>Âge * (9 à 12 ans)</label>
-                  <input required type="number" min="9" max="12" style={inputStyle} placeholder="9 à 12 ans" value={form.ageAthlete} onChange={(e) => set('ageAthlete', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')} />
+                  <label style={labelStyle}>Âge * (12 à 15 ans)</label>
+                  <input required type="number" min="12" max="15" style={inputStyle} placeholder="12 à 15 ans" value={form.ageAthlete} onChange={(e) => set('ageAthlete', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')} />
                 </div>
                 <div>
                   <label style={labelStyle}>Niveau de basketball *</label>

@@ -18,7 +18,7 @@ const focuses = [
       </svg>
     ),
     title: 'Développement Athlétique',
-    desc: 'Vitesse, explosivité, coordination et endurance spécifiques au basketball, adaptés à l\'âge de 9 à 12 ans.',
+    desc: 'Vitesse, explosivité, coordination et endurance spécifiques au basketball, adaptés à l\'âge de 12 à 15 ans.',
   },
   {
     icon: (
