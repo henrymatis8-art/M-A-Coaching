@@ -130,7 +130,7 @@ export default function HeroBasketball() {
         {/* Stats strip */}
         <div className="mt-16 flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 border-t border-white/10 pt-8">
           {[
-            { num: '9–12', label: 'Ans' },
+            { num: '12–15', label: 'Ans' },
             { num: '6x', label: 'Par semaine' },
             { num: '2h', label: 'Semaine (18h)' },
             { num: '2h', label: 'Samedi (12h)' },
