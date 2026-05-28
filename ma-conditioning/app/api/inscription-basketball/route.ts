@@ -4,7 +4,7 @@ import { Resend } from 'resend'
 const resend = new Resend(process.env.RESEND_API_KEY)
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'coachalexandre2005@gmail.com'
 
-const prix: Record<string, number> = { '1': 500, '2': 750, '3': 900, '4': 1000 }
+const prix: Record<string, number> = { '1': 125, '2': 225, '3': 300, '4': 350 }
 
 export async function POST(req: NextRequest) {
   try {

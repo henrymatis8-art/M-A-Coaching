@@ -11,7 +11,7 @@ function getResendClient() {
   return new Resend(key)
 }
 
-const prix: Record<string, number> = { '1': 500, '2': 750, '3': 900, '4': 1000 }
+const prix: Record<string, number> = { '1': 125, '2': 225, '3': 300, '4': 350 }
 
 export async function POST(req: NextRequest) {
   try {
