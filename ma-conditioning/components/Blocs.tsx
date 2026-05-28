@@ -73,12 +73,12 @@ export default function Blocs() {
         >
           <span className="font-display text-xs tracking-[0.4em] text-cyan-brand uppercase block mb-3">Structure du programme</span>
           <h2 className="font-display font-800 text-5xl sm:text-7xl uppercase tracking-tight text-white mb-4">
-            Les 3 Blocs
+            Les 3 Concentrations
           </h2>
           <div className="w-16 h-0.5 bg-cyan-brand mx-auto mb-6" />
           <p className="font-body text-white/60 max-w-2xl mx-auto text-base leading-relaxed">
-            Chaque bloc dure un mois, du lundi au vendredi, 2 heures par session.
-            Les inscriptions se font par bloc — tu peux commencer en juin, juillet ou août.
+            Ces concentrations montrent ce sur quoi l&apos;accent est mis pendant l&apos;entraînement.
+            Tu peux commencer en juin, juillet ou août, selon la disponibilité.
           </p>
         </div>
 

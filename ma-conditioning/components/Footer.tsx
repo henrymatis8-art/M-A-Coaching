@@ -5,7 +5,7 @@ export default function Footer() {
   const links = [
     { label: 'Accueil', href: '#hero' },
     { label: 'Programme', href: '#programme' },
-    { label: 'Blocs', href: '#blocs' },
+    { label: 'Concentrations', href: '#blocs' },
     { label: 'Tarifs', href: '#tarifs' },
     { label: 'Inscription', href: '#inscription' },
     { label: 'Contact', href: '#contact' },

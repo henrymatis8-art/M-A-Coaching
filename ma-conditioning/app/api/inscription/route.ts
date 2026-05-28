@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     const {
       prenomParent, nomParent, courriel, telephone,
       prenomAthlete, nomAthlete, ageAthlete,
-      sport, bloc, semaines, objectif, message,
+      sport, bloc, dateDebut, semaines, objectif, message,
     } = data
 
     const montant = prix[semaines] ?? 0
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: 'M&A Conditioning <onboarding@resend.dev>',
       to: CONTACT_EMAIL,
-      subject: `Nouvelle inscription — ${prenomAthlete} ${nomAthlete} — ${bloc}`,
+      subject: `Nouvelle inscription — ${prenomAthlete} ${nomAthlete} — ${bloc} ${dateDebut}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0a0e1a; color: white; padding: 40px; border-radius: 8px;">
           <h1 style="color: #00d4ff; font-size: 28px; margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase;">Nouvelle Inscription</h1>
@@ -82,8 +82,12 @@ export async function POST(req: NextRequest) {
               </td>
             </tr>
             <tr>
-              <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Bloc</td>
+              <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Mois</td>
               <td style="padding:10px 0; color:white; font-size:13px;">${bloc}</td>
+            </tr>
+            <tr>
+              <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Date de début</td>
+              <td style="padding:10px 0; color:white; font-size:13px;">${dateDebut}</td>
             </tr>
             <tr>
               <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Semaines</td>
@@ -129,8 +133,12 @@ export async function POST(req: NextRequest) {
               <td style="padding:10px 0; color:white; font-size:13px;">${prenomAthlete} ${nomAthlete}, ${ageAthlete} ans</td>
             </tr>
             <tr>
-              <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Bloc</td>
+              <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Mois</td>
               <td style="padding:10px 0; color:white; font-size:13px;">${bloc}</td>
+            </tr>
+            <tr>
+              <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Date de début</td>
+              <td style="padding:10px 0; color:white; font-size:13px;">${dateDebut}</td>
             </tr>
             <tr>
               <td style="padding:10px 0; color:rgba(255,255,255,0.5); font-size:13px;">Durée</td>

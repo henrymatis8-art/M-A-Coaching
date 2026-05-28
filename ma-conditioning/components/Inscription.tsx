@@ -2,12 +2,17 @@
 import { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-const BLOCS = ['Juin — Fondations', 'Juillet — Développement', 'Août — Performance']
+const MOIS = ['Juin', 'Juillet', 'Août']
+const DATES_DE_DEBUT: Record<string, string[]> = {
+  Juin: ['29'],
+  Juillet: ['6', '13', '20', '27'],
+  Août: ['3', '10', '17', '24'],
+}
 const SEMAINES = [
   { value: '1', label: '1 semaine — 125$' },
   { value: '2', label: '2 semaines — 225$' },
   { value: '3', label: '3 semaines — 300$' },
-  { value: '4', label: '4 semaines (bloc complet) — 350$' },
+  { value: '4', label: '4 semaines (programme complet) — 350$' },
 ]
 const SPORTS = ['Athlétisme / Sprint', 'Basketball', 'Football', 'Soccer', 'Tennis', 'Natation', 'Autre sport', 'Aucun sport spécifique']
 
@@ -21,6 +26,7 @@ type FormData = {
   ageAthlete: string
   sport: string
   bloc: string
+  dateDebut: string
   semaines: string
   objectif: string
   message: string
@@ -29,7 +35,7 @@ type FormData = {
 const empty: FormData = {
   prenomParent: '', nomParent: '', courriel: '', telephone: '',
   prenomAthlete: '', nomAthlete: '', ageAthlete: '',
-  sport: '', bloc: '', semaines: '', objectif: '', message: '',
+  sport: '', bloc: '', dateDebut: '', semaines: '', objectif: '', message: '',
 }
 
 export default function Inscription() {
@@ -165,17 +171,28 @@ export default function Inscription() {
               </h3>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Bloc de départ *</label>
-                  <select required className="form-input" value={form.bloc} onChange={(e) => set('bloc', e.target.value)}>
-                    <option value="">Sélectionner un bloc...</option>
-                    {BLOCS.map((b) => <option key={b} value={b}>{b}</option>)}
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Mois de début *</label>
+                  <select required className="form-input" value={form.bloc} onChange={(e) => {
+                    set('bloc', e.target.value)
+                    set('dateDebut', '')
+                  }}>
+                    <option value="">Sélectionner un mois...</option>
+                    {MOIS.map((m) => <option key={m} value={m}>{m}</option>)}
                   </select>
                 </div>
                 <div>
-                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Nombre de semaines *</label>
-                  <select required className="form-input" value={form.semaines} onChange={(e) => set('semaines', e.target.value)}>
-                    <option value="">Sélectionner...</option>
-                    {SEMAINES.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Date de début *</label>
+                  <select
+                    required
+                    className="form-input"
+                    value={form.dateDebut}
+                    onChange={(e) => set('dateDebut', e.target.value)}
+                    disabled={!form.bloc}
+                  >
+                    <option value="">Sélectionner une date...</option>
+                    {form.bloc && DATES_DE_DEBUT[form.bloc].map((date) => (
+                      <option key={date} value={date}>{date}</option>
+                    ))}
                   </select>
                 </div>
               </div>

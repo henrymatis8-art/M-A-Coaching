@@ -102,7 +102,7 @@ export default function Hero() {
             { num: '13–19', label: 'Ans' },
             { num: '2h', label: 'Par session' },
             { num: '5x', label: 'Par semaine' },
-            { num: '3', label: 'Blocs disponibles' },
+            { num: '3', label: 'Concentrations disponibles' },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div className="font-display font-800 text-3xl text-cyan-brand">{s.num}</div>
