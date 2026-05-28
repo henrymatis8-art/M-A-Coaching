@@ -4,10 +4,10 @@ import { useInView } from 'react-intersection-observer'
 
 const BLOCS = ['Juin — Fondations', 'Juillet — Développement', 'Août — Performance']
 const SEMAINES = [
-  { value: '1', label: '1 semaine — 500$' },
-  { value: '2', label: '2 semaines — 750$' },
-  { value: '3', label: '3 semaines — 900$' },
-  { value: '4', label: '4 semaines (bloc complet) — 1000$' },
+  { value: '1', label: '1 semaine — 125$' },
+  { value: '2', label: '2 semaines — 225$' },
+  { value: '3', label: '3 semaines — 300$' },
+  { value: '4', label: '4 semaines (bloc complet) — 350$' },
 ]
 const SPORTS = ['Athlétisme / Sprint', 'Basketball', 'Football', 'Soccer', 'Tennis', 'Natation', 'Autre sport', 'Aucun sport spécifique']
 
