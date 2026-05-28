@@ -173,15 +173,7 @@ export default function InscriptionBasketball() {
                   <label style={labelStyle}>Âge * (12 à 15 ans)</label>
                   <input required type="number" min="12" max="15" style={inputStyle} placeholder="12 à 15 ans" value={form.ageAthlete} onChange={(e) => set('ageAthlete', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')} />
                 </div>
-                <div>
-                  <label style={labelStyle}>Niveau de basketball *</label>
-                  <select required style={{ ...inputStyle, cursor: 'pointer' }} value={form.niveauBasket} onChange={(e) => set('niveauBasket', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}>
-                    <option value="">Sélectionner...</option>
-                    <option value="Débutant">Débutant — peu ou pas d&apos;expérience</option>
-                    <option value="Intermédiaire">Intermédiaire — joue depuis 1-2 ans</option>
-                    <option value="Avancé">Avancé — joue en ligue organisée</option>
-                  </select>
-                </div>
+               
               </div>
               <div style={{ marginTop: '16px' }}>
                 <label style={labelStyle}>Objectif principal *</label>
