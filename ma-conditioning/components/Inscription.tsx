@@ -169,7 +169,7 @@ export default function Inscription() {
                 <span className="w-6 h-px bg-cyan-brand/40" />
                 Choix du programme
               </h3>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 <div>
                   <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Mois de début *</label>
                   <select required className="form-input" value={form.bloc} onChange={(e) => {
@@ -193,6 +193,13 @@ export default function Inscription() {
                     {form.bloc && DATES_DE_DEBUT[form.bloc].map((date) => (
                       <option key={date} value={date}>{date}</option>
                     ))}
+                  </select>
+                </div>
+                <div>
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Nombre de semaines *</label>
+                  <select required className="form-input" value={form.semaines} onChange={(e) => set('semaines', e.target.value)}>
+                    <option value="">Sélectionner...</option>
+                    {SEMAINES.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
                   </select>
                 </div>
               </div>
