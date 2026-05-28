@@ -2,12 +2,17 @@
 import { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-const BLOCS = ['Juin — Fondamentaux', 'Juillet — Développement', 'Août — Performance']
+const MOIS = ['Juin', 'Juillet', 'Août']
+const DATES_DE_DEBUT: Record<string, string[]> = {
+  Juin: ['29'],
+  Juillet: ['6', '13', '20', '27'],
+  Août: ['3', '10', '17', '24'],
+}
 const SEMAINES = [
   { value: '1', label: '1 semaine — 500$' },
   { value: '2', label: '2 semaines — 750$' },
   { value: '3', label: '3 semaines — 900$' },
-  { value: '4', label: '4 semaines (bloc complet) — 1000$' },
+  { value: '4', label: '4 semaines (programme complet) — 1000$' },
 ]
 
 type FormData = {
@@ -19,6 +24,7 @@ type FormData = {
   nomAthlete: string
   ageAthlete: string
   bloc: string
+  dateDebut: string
   semaines: string
   niveauBasket: string
   objectif: string
@@ -28,7 +34,7 @@ type FormData = {
 const empty: FormData = {
   prenomParent: '', nomParent: '', courriel: '', telephone: '',
   prenomAthlete: '', nomAthlete: '', ageAthlete: '',
-  bloc: '', semaines: '', niveauBasket: '', objectif: '', message: '',
+  bloc: '', dateDebut: '', semaines: '', niveauBasket: '', objectif: '', message: '',
 }
 
 const inputStyle = {
@@ -187,17 +193,51 @@ export default function InscriptionBasketball() {
                 <span style={{ width: '24px', height: '1px', background: 'rgba(230,57,70,0.4)', display: 'inline-block' }} />
                 Choix du programme
               </div>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 <div>
-                  <label style={labelStyle}>Bloc de départ *</label>
-                  <select required style={{ ...inputStyle, cursor: 'pointer' }} value={form.bloc} onChange={(e) => set('bloc', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}>
-                    <option value="">Sélectionner un bloc...</option>
-                    {BLOCS.map((b) => <option key={b} value={b}>{b}</option>)}
+                  <label style={labelStyle}>Mois de début *</label>
+                  <select
+                    required
+                    style={{ ...inputStyle, cursor: 'pointer' }}
+                    value={form.bloc}
+                    onChange={(e) => {
+                      set('bloc', e.target.value)
+                      set('dateDebut', '')
+                    }}
+                    onFocus={e => (e.target.style.borderColor = '#E63946')}
+                    onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}
+                  >
+                    <option value="">Sélectionner un mois...</option>
+                    {MOIS.map((m) => <option key={m} value={m}>{m}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label style={labelStyle}>Date de début *</label>
+                  <select
+                    required
+                    style={{ ...inputStyle, cursor: 'pointer' }}
+                    value={form.dateDebut}
+                    onChange={(e) => set('dateDebut', e.target.value)}
+                    onFocus={e => (e.target.style.borderColor = '#E63946')}
+                    onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}
+                    disabled={!form.bloc}
+                  >
+                    <option value="">Sélectionner une date...</option>
+                    {form.bloc && DATES_DE_DEBUT[form.bloc].map((date) => (
+                      <option key={date} value={date}>{date}</option>
+                    ))}
                   </select>
                 </div>
                 <div>
                   <label style={labelStyle}>Nombre de semaines *</label>
-                  <select required style={{ ...inputStyle, cursor: 'pointer' }} value={form.semaines} onChange={(e) => set('semaines', e.target.value)} onFocus={e => (e.target.style.borderColor = '#E63946')} onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}>
+                  <select
+                    required
+                    style={{ ...inputStyle, cursor: 'pointer' }}
+                    value={form.semaines}
+                    onChange={(e) => set('semaines', e.target.value)}
+                    onFocus={e => (e.target.style.borderColor = '#E63946')}
+                    onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,0.15)')}
+                  >
                     <option value="">Sélectionner...</option>
                     {SEMAINES.map((s) => <option key={s.value} value={s.value}>{s.label}</option>)}
                   </select>

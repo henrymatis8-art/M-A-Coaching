@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
     const {
       prenomParent, nomParent, courriel, telephone,
       prenomAthlete, nomAthlete, ageAthlete,
-      niveauBasket, bloc, semaines, objectif, message,
+      niveauBasket, bloc, dateDebut, semaines, objectif, message,
     } = data
 
     const montant = prix[semaines] ?? 0
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: 'M&A Conditioning <onboarding@resend.dev>',
       to: CONTACT_EMAIL,
-      subject: `🏀 Nouvelle inscription Basketball — ${prenomAthlete} ${nomAthlete} — ${bloc}`,
+      subject: `🏀 Nouvelle inscription Basketball — ${prenomAthlete} ${nomAthlete} — ${bloc} ${dateDebut}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0a0e1a; color: white; padding: 40px; border-radius: 8px;">
           <div style="border-left: 4px solid #E63946; padding-left: 16px; margin-bottom: 32px;">
@@ -48,7 +48,8 @@ export async function POST(req: NextRequest) {
             <tr><td colspan="2" style="padding:16px 0 10px; border-bottom:1px solid rgba(230,57,70,0.2);">
               <strong style="color:#E63946; font-size:11px; letter-spacing:2px; text-transform:uppercase;">Programme</strong>
             </td></tr>
-            <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Bloc</td><td style="padding:8px 0; color:white; font-size:13px;">${bloc}</td></tr>
+            <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Mois de début</td><td style="padding:8px 0; color:white; font-size:13px;">${bloc}</td></tr>
+            <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Date de début</td><td style="padding:8px 0; color:white; font-size:13px;">${dateDebut}</td></tr>
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Semaines</td><td style="padding:8px 0; color:white; font-size:13px;">${semaines} semaine${Number(semaines) > 1 ? 's' : ''}</td></tr>
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Montant</td><td style="padding:8px 0; color:#E63946; font-size:20px; font-weight:bold;">${montant} $</td></tr>
             ${message ? `<tr><td colspan="2" style="padding:8px 0; color:rgba(255,255,255,0.6); font-size:13px; border-top:1px solid rgba(255,255,255,0.05);">${message}</td></tr>` : ''}
@@ -78,7 +79,8 @@ export async function POST(req: NextRequest) {
           <table style="width:100%; border-collapse:collapse; margin-bottom:24px;">
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px; width:40%;">Athlète</td><td style="padding:8px 0; color:white; font-size:13px;">${prenomAthlete} ${nomAthlete}, ${ageAthlete} ans</td></tr>
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Niveau</td><td style="padding:8px 0; color:white; font-size:13px;">${niveauBasket}</td></tr>
-            <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Bloc</td><td style="padding:8px 0; color:white; font-size:13px;">${bloc}</td></tr>
+            <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Mois de début</td><td style="padding:8px 0; color:white; font-size:13px;">${bloc}</td></tr>
+            <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Date de début</td><td style="padding:8px 0; color:white; font-size:13px;">${dateDebut}</td></tr>
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Durée</td><td style="padding:8px 0; color:white; font-size:13px;">${semaines} semaine${Number(semaines) > 1 ? 's' : ''} · 6 sessions/semaine · 2h/session</td></tr>
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Horaire</td><td style="padding:8px 0; color:white; font-size:13px;">Lun–Ven 18h · Sam 12h</td></tr>
             <tr><td style="padding:8px 0; color:rgba(255,255,255,0.5); font-size:13px;">Montant</td><td style="padding:8px 0; color:#E63946; font-size:22px; font-weight:bold;">${montant} $</td></tr>
