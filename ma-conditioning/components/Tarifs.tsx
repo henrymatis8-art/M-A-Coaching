@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 const tarifs = [
   {
     weeks: 1,
-    price: '150 + frais d\'admin', // 75$ de frais d'admin pour les sessions uniques            
+    price: '125 + frais d\'admin', // 75$ de frais d'admin pour les sessions uniques            
     perHour: 225 / 10, // 10 sessions de 2h
     label: 'Essai',
     description: 'Parfait pour découvrir le programme et évaluer l\'apport pour ton athlète.',
@@ -13,8 +13,8 @@ const tarifs = [
   },
   {
     weeks: 2,
-    price: 350,
-    perHour: 350 / 10, // 10 sessions de 2h
+    price: 225,
+    perHour: 225 / 10, // 10 sessions de 2h
     label: 'Développement',
     description: 'Deux semaines pour vraiment ressentir la progression et ancrer les nouvelles habitudes.',
     features: ['10 sessions de 2h', 'Évaluation initiale', '2 rapports hebdomadaires', 'Économie de 250$'],
@@ -22,8 +22,8 @@ const tarifs = [
   },
   {
     weeks: 3,
-    price: 450,
-    perHour: 450 / 15, // 15 sessions de 2h
+    price: 300,
+    perHour: 300 / 15, // 15 sessions de 2h
     label: 'Engagement',
     description: 'Trois semaines pour une transformation réelle et mesurable des capacités physiques.',
     features: ['15 sessions de 2h', 'Évaluation initiale', '3 rapports hebdomadaires', 'Économie de 600$'],
@@ -31,8 +31,8 @@ const tarifs = [
   },
   {
     weeks: 4,
-    price: 525,
-    perHour: 525 / 20, // 20 sessions de 2h
+    price: 350,
+    perHour: 350 / 20, // 20 sessions de 2h
     label: 'Bloc Complet',
     description: 'Le mois entier — la meilleure valeur et la progression la plus complète possible.',
     features: ['20 sessions de 2h', 'Évaluation initiale', '4 rapports hebdomadaires', 'Économie de 1 000$', 'Accès prioritaire au bloc suivant'],

@@ -59,7 +59,7 @@ export default function Inscription() {
     }
   }
 
-  const prix: Record<string, number> = { '1': 500, '2': 750, '3': 900, '4': 1000 }
+  const prix: Record<string, number> = { '1': 125, '2': 225, '3': 300, '4': 350 }
 
   return (
     <section id="inscription" className="relative bg-navy py-28 overflow-hidden">
@@ -102,24 +102,24 @@ export default function Inscription() {
             <div className="mb-8">
               <h3 className="font-display font-700 text-lg uppercase tracking-wide text-cyan-brand mb-5 flex items-center gap-3">
                 <span className="w-6 h-px bg-cyan-brand/40" />
-                Informations du parent
+                Informations du parent <span className="font-display font-400 text-xs text-white/40">(si applicable)</span>
               </h3>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Prénom *</label>
-                  <input required className="form-input" placeholder="Prénom" value={form.prenomParent} onChange={(e) => set('prenomParent', e.target.value)} />
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Prénom</label>
+                  <input className="form-input" placeholder="Prénom" value={form.prenomParent} onChange={(e) => set('prenomParent', e.target.value)} />
                 </div>
                 <div>
-                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Nom *</label>
-                  <input required className="form-input" placeholder="Nom" value={form.nomParent} onChange={(e) => set('nomParent', e.target.value)} />
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Nom</label>
+                  <input className="form-input" placeholder="Nom" value={form.nomParent} onChange={(e) => set('nomParent', e.target.value)} />
                 </div>
                 <div>
-                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Courriel *</label>
-                  <input required type="email" className="form-input" placeholder="courriel@exemple.com" value={form.courriel} onChange={(e) => set('courriel', e.target.value)} />
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Courriel</label>
+                  <input type="email" className="form-input" placeholder="courriel@exemple.com" value={form.courriel} onChange={(e) => set('courriel', e.target.value)} />
                 </div>
                 <div>
-                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Téléphone *</label>
-                  <input required className="form-input" placeholder="514-000-0000" value={form.telephone} onChange={(e) => set('telephone', e.target.value)} />
+                  <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Téléphone</label>
+                  <input className="form-input" placeholder="514-000-0000" value={form.telephone} onChange={(e) => set('telephone', e.target.value)} />
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Inscription() {
                 </div>
                 <div>
                   <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Âge *</label>
-                  <input required type="number" min="8" max="20" className="form-input" placeholder="8 à 20 ans" value={form.ageAthlete} onChange={(e) => set('ageAthlete', e.target.value)} />
+                  <input required type="number" min="8" max="20" className="form-input" placeholder="13 à 19 ans" value={form.ageAthlete} onChange={(e) => set('ageAthlete', e.target.value)} />
                 </div>
                 <div>
                   <label className="font-display text-xs tracking-wider uppercase text-white/50 block mb-2">Sport pratiqué *</label>

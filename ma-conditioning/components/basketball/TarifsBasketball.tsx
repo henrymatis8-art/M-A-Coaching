@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 const tarifs = [
   {
     weeks: 1,
-    price: '150 + frais d\'admin',
+    price: '125 + frais d\'admin',
     perHour: 225 / 12, // 12 sessions de 2h
     label: 'Essai',
     description: 'Parfait pour découvrir le programme et évaluer l\'apport pour ton jeune athlète.',
@@ -13,8 +13,8 @@ const tarifs = [
   },
   {
     weeks: 2,
-    price: 350,
-    perHour: 30, // 12 sessions de 2h
+    price: 225,
+    perHour: 225 / 12, // 12 sessions de 2h
     label: 'Développement',
     description: 'Deux semaines pour vraiment ressentir la progression et ancrer les bons gestes.',
     features: ['12 sessions de 2h', 'Évaluation initiale', '2 rapports hebdomadaires', 'Économie de 250$'],
@@ -22,8 +22,8 @@ const tarifs = [
   },
   {
     weeks: 3,
-    price: 450,
-    perHour: 450 / 18, // 18 sessions de 2h
+    price: 300,
+    perHour: 300 / 36, // 18 sessions de 2h
     label: 'Engagement',
     description: 'Trois semaines pour une transformation réelle et mesurable des habiletés basketball.',
     features: ['18 sessions de 2h', 'Évaluation initiale', '3 rapports hebdomadaires', 'Économie de 600$'],
@@ -31,8 +31,8 @@ const tarifs = [
   },
   {
     weeks: 4,
-    price: 525,
-    perHour: 525 / 24, // 24 sessions de 2h
+    price: 350,
+    perHour: 350 / 48, // 24 sessions de 2h
     label: 'Bloc Complet',
     description: 'Le mois entier — la meilleure valeur et la progression la plus complète possible.',
     features: ['24 sessions de 2h', 'Évaluation initiale', '4 rapports hebdomadaires', 'Économie de 1 000$', 'Accès prioritaire au bloc suivant'],

@@ -64,7 +64,7 @@ export default function InscriptionBasketball() {
     } catch { setStatus('error') }
   }
 
-  const prix: Record<string, number> = { '1': 500, '2': 750, '3': 900, '4': 1000 }
+  const prix: Record<string, number> = { '1': 125, '2': 225, '3': 300, '4': 350 }
 
   const labelStyle = { display: 'block', fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase' as const, color: 'rgba(255,255,255,0.4)', marginBottom: '8px', fontFamily: 'var(--font-barlow)', fontWeight: 700 }
 
@@ -125,16 +125,17 @@ export default function InscriptionBasketball() {
           >
             {/* Parent */}
             <div style={{ marginBottom: '32px' }}>
-              <div style={sectionTitleStyle}>
+              <div style={{...sectionTitleStyle, display: 'flex', alignItems: 'center', gap: '12px'}}>
                 <span style={{ width: '24px', height: '1px', background: 'rgba(230,57,70,0.4)', display: 'inline-block' }} />
-                Informations du parent
+                <span>Informations du parent</span>
+                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)', fontWeight: 400, letterSpacing: '0' }}>(si applicable)</span>
               </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { key: 'prenomParent', label: 'Prénom *', placeholder: 'Prénom', type: 'text', required: true },
-                  { key: 'nomParent', label: 'Nom *', placeholder: 'Nom', type: 'text', required: true },
-                  { key: 'courriel', label: 'Courriel *', placeholder: 'courriel@exemple.com', type: 'email', required: true },
-                  { key: 'telephone', label: 'Téléphone *', placeholder: '514-000-0000', type: 'text', required: true },
+                  { key: 'prenomParent', label: 'Prénom', placeholder: 'Prénom', type: 'text', required: false },
+                  { key: 'nomParent', label: 'Nom', placeholder: 'Nom', type: 'text', required: false },
+                  { key: 'courriel', label: 'Courriel', placeholder: 'courriel@exemple.com', type: 'email', required: false },
+                  { key: 'telephone', label: 'Téléphone', placeholder: '514-000-0000', type: 'text', required: false },
                 ].map(({ key, label, placeholder, type, required }) => (
                   <div key={key}>
                     <label style={labelStyle}>{label}</label>

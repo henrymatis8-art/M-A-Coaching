@@ -2,11 +2,11 @@
 import { useInView } from 'react-intersection-observer'
 
 const schedule = [
-  { day: 'Lundi',     times: ['9h – 11h', '20h – 22h'], weekend: false },
-  { day: 'Mardi',     times: ['9h – 11h', '20h – 22h'], weekend: false },
-  { day: 'Mercredi',  times: ['9h – 11h', '20h – 22h'], weekend: false },
-  { day: 'Vendredi',  times: ['9h – 11h', '20h – 22h'], weekend: false },
-  { day: 'Samedi',    times: ['9h – 11h'],               weekend: true  },
+  { day: 'Lundi',     times: ['À déterminer'], weekend: false },
+  { day: 'Mardi',     times: ['À déterminer'], weekend: false },
+  { day: 'Mercredi',  times: ['À déterminer'], weekend: false },
+  { day: 'Vendredi',  times: ['À déterminer'], weekend: false },
+  { day: 'Samedi',    times: ['À déterminer'],               weekend: true  },
   { day: 'Dimanche',  times: ['—'],                      weekend: true  },
 ]
 

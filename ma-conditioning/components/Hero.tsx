@@ -71,7 +71,7 @@ export default function Hero() {
           <span className="text-white font-600">13 à 19 ans</span>
         </p>
         <p className="font-body text-white/50 text-sm max-w-lg mx-auto mb-10 leading-relaxed">
-          Athlétisme · Sprint · Basketball · Conditionnement physique
+          Athlétisme · Sprint · Conditionnement physique
           <br />
           <span className="text-cyan-brand/80">Complexe sportif Claude-Robillard -Montréal — Été 2026 · Juin / Juillet / Août</span>
         </p>

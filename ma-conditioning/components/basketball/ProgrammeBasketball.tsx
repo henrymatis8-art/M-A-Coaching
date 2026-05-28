@@ -41,8 +41,8 @@ const focuses = [
 ]
 
 const schedule = [
-  { day: 'Lundi – Vendredi', time: '18h00', duration: '2h', type: 'Entraînement semaine' },
-  { day: 'Samedi', time: '12h00', duration: '2h', type: 'Entraînement fin de semaine' },
+  { day: 'Lundi – Vendredi', time: 'À déterminer', duration: 'selon la disponibilité', type: 'Entraînement semaine' },
+  { day: 'Samedi', time: 'À déterminer', duration: 'selon la disponibilité', type: 'Entraînement fin de semaine' },
   { day: 'Dimanche', time: '—', duration: '—', type: 'Repos' },
 ]
 
@@ -67,7 +67,7 @@ export default function ProgrammeBasketball() {
           </h2>
           <div className="w-16 h-0.5 mx-auto mb-6" style={{ background: '#E63946' }} />
           <p className="text-white/60 max-w-2xl mx-auto text-base leading-relaxed">
-            Un programme continu et intensif conçu pour les jeunes de 9 à 12 ans. Six jours par semaine,
+            Un programme continu et intensif conçu pour les jeunes de 12 à 15 ans. Six jours par semaine,
             on travaille les fondamentaux, le développement physique et la mentalité compétitive dans un
             environnement bienveillant et structuré.
           </p>
