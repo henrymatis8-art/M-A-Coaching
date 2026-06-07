@@ -5,8 +5,8 @@ const tarifs = [
   {
     weeks: 1,
     price: '125 + frais d\'admin', // 75$ de frais d'admin pour les sessions uniques            
-    perHour: 225 / 10, // 10 sessions de 2h
-    label: 'Essai',
+  
+    label: 'Introduction',
     description: 'Parfait pour découvrir le programme et évaluer l\'apport pour ton athlète.',
     features: ['5 sessions de 2h', 'Évaluation initiale', 'Rapport hebdomadaire'],
     popular: false,
@@ -14,7 +14,7 @@ const tarifs = [
   {
     weeks: 2,
     price: 225,
-    perHour: 225 / 10, // 10 sessions de 2h
+   
     label: 'Développement',
     description: 'Deux semaines pour vraiment ressentir la progression et ancrer les nouvelles habitudes.',
     features: ['10 sessions de 2h', 'Évaluation initiale', '2 rapports hebdomadaires', 'Économie de 250$'],
@@ -23,7 +23,7 @@ const tarifs = [
   {
     weeks: 3,
     price: 300,
-    perHour: 300 / 15, // 15 sessions de 2h
+   
     label: 'Engagement',
     description: 'Trois semaines pour une transformation réelle et mesurable des capacités physiques.',
     features: ['15 sessions de 2h', 'Évaluation initiale', '3 rapports hebdomadaires', 'Économie de 600$'],
@@ -32,8 +32,8 @@ const tarifs = [
   {
     weeks: 4,
     price: 350,
-    perHour: 350 / 20, // 20 sessions de 2h
-    label: 'Bloc Complet',
+    
+    label: 'Développement Complet',
     description: 'Le mois entier — la meilleure valeur et la progression la plus complète possible.',
     features: ['20 sessions de 2h', 'Évaluation initiale', '4 rapports hebdomadaires', 'Économie de 1 000$', 'Accès prioritaire au bloc suivant'],
     popular: false,
@@ -91,11 +91,7 @@ export default function Tarifs() {
 
               <div className="mb-4">
                 <span className="font-display font-800 text-4xl text-white">{t.price}$</span>
-                <div className="font-body text-xs text-cyan-brand mt-1">
-                  {t.weeks === 1
-                    ? 'Tarif hors frais d\'admin — 75$ de frais d\'administration en sus'
-                    : `${t.perHour}$/heure · frais d'administration inclus`}
-                </div>
+                
               </div>
 
               <p className="font-body text-white/50 text-xs leading-relaxed mb-5">{t.description}</p>

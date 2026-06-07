@@ -5,8 +5,8 @@ const tarifs = [
   {
     weeks: 1,
     price: '125 + frais d\'admin',
-    perHour: 225 / 12, // 12 sessions de 2h
-    label: 'Essai',
+    
+    label: 'introduction',
     description: 'Parfait pour découvrir le programme et évaluer l\'apport pour ton jeune athlète.',
     features: ['6 sessions  de 2h', 'Évaluation initiale', 'Rapport hebdomadaire'],
     popular: false,
@@ -14,7 +14,7 @@ const tarifs = [
   {
     weeks: 2,
     price: 225,
-    perHour: 225 / 12, // 12 sessions de 2h
+    
     label: 'Développement',
     description: 'Deux semaines pour vraiment ressentir la progression et ancrer les bons gestes.',
     features: ['12 sessions de 2h', 'Évaluation initiale', '2 rapports hebdomadaires', 'Économie de 250$'],
@@ -23,7 +23,7 @@ const tarifs = [
   {
     weeks: 3,
     price: 300,
-    perHour: 300 / 36, // 18 sessions de 2h
+    
     label: 'Engagement',
     description: 'Trois semaines pour une transformation réelle et mesurable des habiletés basketball.',
     features: ['18 sessions de 2h', 'Évaluation initiale', '3 rapports hebdomadaires', 'Économie de 600$'],
@@ -32,8 +32,8 @@ const tarifs = [
   {
     weeks: 4,
     price: 350,
-    perHour: 350 / 48, // 24 sessions de 2h
-    label: 'Bloc Complet',
+    
+    label: 'developpement complet',
     description: 'Le mois entier — la meilleure valeur et la progression la plus complète possible.',
     features: ['24 sessions de 2h', 'Évaluation initiale', '4 rapports hebdomadaires', 'Économie de 1 000$', 'Accès prioritaire au bloc suivant'],
     popular: false,
@@ -94,7 +94,7 @@ export default function TarifsBasketball() {
 
               <div className="mb-4">
                 <span className="text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-barlow)' }}>{t.price}$</span>
-                <div className="text-xs mt-1" style={{ color: '#E63946' }}>{t.perHour}$/heure · frais d&apos;admin inclus</div>
+                
               </div>
 
               <p className="text-white/50 text-xs leading-relaxed mb-5">{t.description}</p>

@@ -53,7 +53,7 @@ export default function Home() {
         <Hero />
         <Programme />
         <Horaires />
-        <Blocs />
+        
         <Tarifs />
         <Inscription />
         <Contact />

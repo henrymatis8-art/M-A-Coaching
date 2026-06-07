@@ -9,10 +9,10 @@ const DATES_DE_DEBUT: Record<string, string[]> = {
   Août: ['3', '10', '17', '24'],
 }
 const SEMAINES = [
-  { value: '1', label: '1 semaine — 500$' },
-  { value: '2', label: '2 semaines — 750$' },
-  { value: '3', label: '3 semaines — 900$' },
-  { value: '4', label: '4 semaines (programme complet) — 1000$' },
+  { value: '1', label: '1 semaine — 125$' },
+  { value: '2', label: '2 semaines — 225$' },
+  { value: '3', label: '3 semaines — 300$' },
+  { value: '4', label: '4 semaines (programme complet) — 350$' },
 ]
 
 type FormData = {
