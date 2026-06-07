@@ -61,7 +61,7 @@ export default function HeroBasketball() {
         <div className="inline-flex items-center gap-2 mb-6">
           <span className="w-8 h-px bg-[#E63946]" />
           <span className="text-[#E63946] uppercase tracking-[0.35em] text-xs font-bold">
-            Montréal — coachalexandre2005@gmail.com
+            parc felix leclerc anjou - Montréal — coachalexandre2005@gmail.com
           </span>
           <span className="w-8 h-px bg-[#E63946]" />
         </div>

@@ -27,7 +27,7 @@ const tarifs = [
     label: 'Engagement',
     description: 'Trois semaines pour une transformation réelle et mesurable des capacités physiques.',
     features: ['15 sessions de 2h', 'Évaluation initiale', '3 rapports hebdomadaires', 'Économie de 600$'],
-    popular: true,
+    popular: false,
   },
   {
     weeks: 4,
@@ -36,7 +36,7 @@ const tarifs = [
     label: 'Développement Complet',
     description: 'Le mois entier — la meilleure valeur et la progression la plus complète possible.',
     features: ['20 sessions de 2h', 'Évaluation initiale', '4 rapports hebdomadaires', 'Économie de 1 000$', 'Accès prioritaire au bloc suivant'],
-    popular: false,
+    popular: true,
   },
 ]
 
