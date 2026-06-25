@@ -61,7 +61,7 @@ export default function TarifsBasketball() {
           <div className="w-16 h-0.5 mx-auto mb-6" style={{ background: '#E63946' }} />
           <p className="text-white/60 max-w-2xl mx-auto text-base leading-relaxed">
             Choisissez le nombre de semaines qui correspond à votre engagement.
-            Les sessions ont lieu 6 jours par semaine — lundi au vendredi à 18h, samedi à 12h.
+            Les sessions ont lieu 6 jours par semaine — lundi au samedi en matinée.
           </p>
         </div>
 
